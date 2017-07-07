@@ -1,6 +1,6 @@
 # create a bosh2 director environment
 
-bosh2 create-env bosh-deployment/bosh.yml \
+bosh2 delete-env bosh-deployment/bosh.yml \
     --state=state.json \
     --vars-store=creds.yml \
     -o bosh-deployment/vsphere/cpi.yml \

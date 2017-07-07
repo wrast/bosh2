@@ -4,6 +4,7 @@ bosh2 delete-env bosh-deployment/bosh.yml \
     --state=state.json \
     --vars-store=creds.yml \
     -o bosh-deployment/vsphere/cpi.yml \
+    -o bosh-deployment/jumpbox-user.yml \
     -v director_name=bosh-v2 \
     -v internal_cidr=172.28.68.0/24 \
     -v internal_gw=172.28.68.1 \
